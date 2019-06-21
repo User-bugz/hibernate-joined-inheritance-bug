@@ -21,8 +21,7 @@ public class DemoApplication implements CommandLineRunner {
 	}
 
 	/**
-	 * remove DiscriminatorColumn annotation from BaseEntity class
-	 * and DiscriminatorValue annotation from DescendantEntity to persist
+	 * remove jdbc.batch_size property from persistence.xml or application.yaml to persist
 	 * correctly with JpaRepository or EntityManager
 	 *
 	 */
