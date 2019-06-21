@@ -16,6 +16,7 @@ import javax.persistence.InheritanceType;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
+
 @Entity
 @Table(name = "base")
 @Inheritance(strategy = InheritanceType.JOINED)
