@@ -24,5 +24,6 @@ public class JoinedInheritanceEntityManagerService {
         em.flush();
         em.getTransaction().commit();
         em.clear();
+        emf.close();
     }
 }
