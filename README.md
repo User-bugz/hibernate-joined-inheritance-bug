@@ -2,5 +2,4 @@
 Hibernate Joined Inheritance with Discriminator column persistance bug.
 Entity saved partially: only to the base table. Descendant table is empty. 
 "HHH000010: On release of batch it still contained JDBC statements" message issued after persisting.
-Remove DiscriminatorColumn annotation from BaseEntity class and DiscriminatorValue annotation from DescendantEntity to persist correctly with JpaRepository or EntityManager.
-Or remove jdbc.batch_size property. 
+Remove jdbc.batch_size property to persist correctly with JpaRepository or EntityManager.
