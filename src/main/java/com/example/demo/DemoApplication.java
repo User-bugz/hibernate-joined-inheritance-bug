@@ -23,15 +23,13 @@ public class DemoApplication implements CommandLineRunner {
 	/**
 	 * remove DiscriminatorColumn annotation from BaseEntity class
 	 * and DiscriminatorValue annotation from DescendantEntity to persist
-	 * correctly with JpaRepository
+	 * correctly with JpaRepository or EntityManager
 	 *
-	 * Also entity could be persisted correctly with joinedInheritanceEntityManagerService
-	 * with these annotation stayed intact
 	 */
 	@Override
 	public void run(String... args) throws Exception {
-		joinedInheritanceJpaService.saveEntity();
+		//joinedInheritanceJpaService.saveEntity();
 
-		//joinedInheritanceEntityManagerService.saveEntity();
+		joinedInheritanceEntityManagerService.saveEntity();
 	}
 }

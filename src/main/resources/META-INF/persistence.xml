@@ -10,6 +10,8 @@
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect"/>
             <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.jdbc.batch_size" value="100"/>
+            <property name="hibernate.jdbc.lob.non_contextual_creation" value="true"/>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/demo"/>
             <property name="javax.persistence.jdbc.user" value="postgres"/>

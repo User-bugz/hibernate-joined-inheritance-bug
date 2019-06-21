@@ -21,6 +21,8 @@ public class JoinedInheritanceEntityManagerService {
         descendantEntity.setSurname("surname");
 
         em.persist(descendantEntity);
-        //em.getTransaction().commit();
+        em.flush();
+        em.getTransaction().commit();
+        em.clear();
     }
 }
